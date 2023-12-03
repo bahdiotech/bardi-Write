@@ -19,6 +19,7 @@ export const Header = () => {
     signOut(auth)
     localStorage.setItem("isAuth", false);
     setIsAuth(false)
+    window.location.reload()
   }
 
   return (
