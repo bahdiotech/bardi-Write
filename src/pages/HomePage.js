@@ -28,7 +28,7 @@ export const HomePage = () => {
 
   return (<main>
     <div className="max320:w-max w-screen">
-      <button onClick={() => window.location.reload()} className="dark:text-white bg-blue-500 p-2 mb-4 font-bold w-[7rem] flex items-center justify-center rounded-md ml-[50%]"><span>Refresh</span><RiRefreshLine className="text-green-400 ml-1"/> </button>
+      <button onClick={() => window.location.reload()} className="dark:text-white bg-blue-500 p-2 mb-4 font-bold w-[7rem] flex items-center justify-center rounded-md ml-[40%]"><span>Refresh</span><RiRefreshLine className="text-green-400 ml-1"/> </button>
       {posts && posts.map((post, index) => (post ? <PostCard key={post.id} refresh={refresh} setRefresh={setRefresh} post={post} /> : <SkeletonCard key={index} />))
       }
     </div>
