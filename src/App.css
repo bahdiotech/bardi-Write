@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+    min-height: 20rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    max-width: 80rem;
+    height: 100vh;
+ 
+}
+
+@media (min-width:150px) and (max-width: 1320px) {
+    main{
+    width: 100%;  
+    }
+}
+
+/* .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
