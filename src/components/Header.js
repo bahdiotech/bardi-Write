@@ -12,7 +12,6 @@ export const Header = () => {
     signInWithPopup(auth, provider).then((result) => {
       setIsAuth(true)
       localStorage.setItem("isAuth", true);
-      console.log(result);
     })
   }
 
