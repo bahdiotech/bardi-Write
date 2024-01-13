@@ -13,7 +13,6 @@ export const Header = () => {
       setIsAuth(true)
       localStorage.setItem("isAuth", true);
     })
-    window.location.reload()
   }
 
   function handleLogout() {
